@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>遇见</title>
+    <link rel="stylesheet" href="../static/css/reset.css"/>
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/ge_ren/ge_ren_info.js"></script>
+    <script type="text/javascript" src="../static/js/ge_ren/need_mobile_select.js"></script>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../static/css/home/main.css"/>
+    <link rel="stylesheet" href="../static/css/ge_ren/ge_ren.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/ge_ren/public.css">
+
+    <!-- 引入样式和js文件 -->
+    <link rel="stylesheet" type="text/css" href="../static/css/ge_ren/mobileSelect.css">
+    <script src="../static/js/ge_ren/mobileSelect.js" type="text/javascript"></script>
+</head>
+<body>
+<div>
+    <nav class="navbar" style="background-color: hotpink ;margin-bottom: 0;height: 80px">
+
+        <h2 class="form-signin-heading" style="font-size: 30px;margin-top: 24px;text-align: center;color: whitesmoke">
+            个人资料</h2>
+        <a href="ge_ren.html" class="glyphicon glyphicon-chevron-left" style="font-size: 30px;height: 50px;width: 50px;position: absolute;top: 50%;color: white "></a>
+        <a href="#" id="save_data" style="font-size: 23px;height: 50px;width: 50px;position: absolute;top: 50%;right:5px;color: white;">保存</a>
+
+    </nav>
+    <p style="text-align: center;height: 40px;margin: 0;padding-top: 8px;font-size: 16px;background-color: #c4e3f3">
+        提交真实信息可以获得优先推荐机会</p>
+
+</div>
+
+<p class="cai_dan">基本资料</p>
+
+<form action="">
+    <div style="background-color: white">
+        <p class="user_title" style="width: 35%;float: left;">昵称</p>
+        <p class="right_value" style="width:65%;float: left">
+            <input id="nickname" type="text" style="color: black;font-size: 14px;border: 0;" value="我是网名">
+        </p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">性别</p>
+        <p id="trigger_sex" class="right_value" style="width:56%;float: left">
+        </p>
+         <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">年龄</p>
+        <p class="right_value" style="width:65%;float: left">
+
+        </p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">身高</p>
+        <p id="trigger1" class="right_value" style="width:56%;float: left">
+            159
+        </p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">所在城市</p>
+        <p id="trigger5" class="right_value" style="width:56%;float: left">
+            fsf
+        </p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+
+        <p class="user_title" style="width: 35%;float: left;">婚姻状况</p>
+        <p id="trigger2" class="right_value" style="width:56%;float: left">
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">个性签名</p>
+        <p class="right_value" style="width:65%;float: left">
+            <input id="remack" style="width: 100%;font-size: 12px;border: 0;" type="text" value="这个人很懒...什么都没有留下"></p>
+        <p class="line"></p>
+        <p class="cai_dan">详细资料</p>
+        <p class="user_title" style="width: 35%;float: left;">学历</p>
+        <p id="trigger3" class="right_value" style="width:56%;float: left"></p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">职业</p>
+        <p id="trigger4" class="right_value" style="width:56%;float: left">
+        </p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">生日</p>
+        <p id="trigger6" class="right_value" style="width:56%;float: left">
+        </p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">体重</p>
+        <p id="trigger7" class="right_value" style="width:56%;float: left">
+        </p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">身材</p>
+        <p id="trigger8" class="right_value" style="width:56%;float: left">
+        </p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="cai_dan">联系方式</p>
+
+        <p class="user_title" style="width: 35%;float: left;">QQ</p>
+        <p class="right_value" style="width:65%;float: left">
+            <input id="qq" type="text" style="font-size: 16px;" value="116516"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">手机</p>
+        <p class="right_value" style="width:65%;float: left">
+            <input id="phone_" type="text" style="font-size: 16px;" value="221165"></p>
+        <p class="cai_dan">推荐交友设置</p>
+        <p class="user_title" style="width: 35%;float: left;">匹配的性别</p>
+        <p id="trigger10" class="right_value" style="width:56%;float: left">
+        </p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">目标城市</p>
+        <p id="trigger11" class="right_value" style="width:56%;float: left">
+        </p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">最小查找范围</p>
+        <p id="trigger12" class="right_value" style="width:56%;float: left">
+        </p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">最大查找范围</p>
+        <p id="trigger13" class="right_value" style="width:56%;float: left">
+        </p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">最小交友年龄</p>
+        <p id="trigger14" class="right_value" style="width:56%;float: left">
+        </p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <p class="line"></p>
+        <p class="user_title" style="width: 35%;float: left;">最大交友年龄</p>
+        <p id="trigger15" class="right_value" style="width:56%;float: left">
+        </p>
+        <p class="right_tag chevron-right glyphicon glyphicon-chevron-right"></p>
+        <button class="btn btn-lg btn-primary btn-block" type="button" id="remind"
+                    style="position: absolute;left: 15%;bottom: 50%;width: 70%;margin: 30px auto;background-color: #2a1a2a;font-size: 16px;height: 42px;display: none" >
+            </button>
+    </div>
+</form>
+<p style="height: 370px;background-color: #eee"></p>
+
+<footer style="height: 80px;font-size: 16px;background: #eee;">
+    <a href="mine.html" class="home">
+        <dl>
+
+            <dd class="glyphicon glyphicon-home " style="margin-top: 19px;font-size: 20px;"></dd>
+
+            <dd style="align-content: center;">
+                遇见
+            </dd>
+        </dl>
+    </a>
+
+
+    <a href="tuodong.html" class="cart">
+        <dl>
+
+            <dd class="glyphicon glyphicon-heart " style="margin-top: 19px;font-size: 20px; "></dd>
+
+            <dd style="align-content: center;">
+                缘分
+            </dd>
+        </dl>
+    </a>
+    <a href="hao_you.html" class="market">
+        <dl>
+
+            <dd class="glyphicon glyphicon-plane "
+                style="margin-top: 19px;font-size: 20px; "></dd>
+
+            <dd style="align-content: center;">
+                好友
+            </dd>
+        </dl>
+    </a>
+    <a href="ge_ren.html" class="mine">
+        <dl>
+
+            <dd class="glyphicon glyphicon-user " style="margin-top: 19px;font-size: 20px;color: hotpink"></dd>
+
+            <dd style="align-content: center;color: hotpink">
+                个人
+            </dd>
+        </dl>
+    </a>
+</footer>
+
+</body>
+</html>

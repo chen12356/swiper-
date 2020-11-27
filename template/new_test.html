@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>滑动效果</title>
+<script>
+/*
+function moveSearch(topValue){
+    var _top = document.getElementById("searchDiv").scrollTop;
+    for(i = 0; i < Math.abs(_top-topValue); i++){
+        if(_top < topValue){
+            document.getElementById("searchDiv").scrollTop += 1;
+        }else{
+            document.getElementById("searchDiv").scrollTop -= 1;
+        }
+    }
+}
+*/
+var moveSearchFlag = false;
+var moveSearchTimeAction = null;
+function moveSearch(topValue){
+    if(moveSearchTimeAction != null){
+        clearTimeout(moveSearchTimeAction);
+    }
+    var _top = document.getElementById("searchDiv").scrollLeft;
+    if(_top < topValue){
+        document.getElementById("searchDiv").scrollLeft += Math.round(Math.abs(_top-topValue)/2);
+    }else if(_top > topValue){
+        document.getElementById("searchDiv").scrollLeft -= Math.round(Math.abs(_top-topValue)/2);
+    }
+    if(_top != topValue){
+        moveSearchTimeAction = setTimeout("moveSearch("+topValue+")",30);
+    }else{
+        moveSearchTimeAction = null;
+    }
+}
+</script>
+</head>
+    <body>
+        <div id="searchDiv" style="border:1px solid blue;width:200px;height:400px;overflow:hidden">
+            <div style="border:1px solid blue;width:200px;height:398px; float:left">1111111111111111<br></div>
+            <div style="border:1px solid blue;width:200px;height:398px; float:left">2222222222222222<br></div>
+            <div style="border:1px solid blue;width:200px;height:398px; float:left">3333333333333333<br></div>
+        </div>
+        <div>选择按钮</div>
+        <div><input type="button" value="look 1" onclick="moveSearch(0)"/></div>
+        <div><input type="button" value="look 2" onclick="moveSearch(200)"/></div>
+        <div><input type="button" value="look 3" onclick="moveSearch(400)"/></div>
+        <div id="show"></div>
+    </body>
+<html>

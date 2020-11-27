@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title></title>
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/login/login.js"></script>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../static/css/reset.css"/>
+
+</head>
+<body>
+<div>
+    <nav class="navbar" style="background-color: hotpink ;margin-bottom: 0;height: 80px">
+
+        <h2 class="form-signin-heading" style="font-size: 30px;margin-top: 24px;text-align: center;color: whitesmoke">
+            手机号登录</h2>
+    </nav>
+    <div class="container">
+        <form class="form-signin">
+            <div style="margin-top: 16px;height: 34px;font-size: 18px;float: left"> 手机号：</div>
+
+            <input type="text" id="telephone" class="form-control" placeholder="请输入真实有效的手机号" required autofocus
+                   style="margin-top: 30px;height: 50px;font-size: 16px;width: 80%;">
+            <div style="margin-top: 24px;height: 34px;font-size: 18px;float: left;"> 验证码：</div>
+            <input type="text" id="code_num" class="form-control" placeholder="请输入验证码" required
+                   style="width: 40%;float: left;margin-top: 10px;height: 50px;font-size: 16px">
+            <button type="button" id="code" class="btn btn-default"
+                    style="width: 40%;margin-top: 10px;height: 50px;font-size: 16px">获取验证码
+            </button>
+            <button class="btn btn-lg btn-primary btn-block" type="button" id="login"
+                    style="width: 50%;margin: 30px auto;background-color: hotpink;">确认登录
+            </button>
+            <button class="btn btn-lg btn-primary btn-block" type="button" id="remind"
+                    style="width: 70%;margin: 30px auto;background-color: #2a1a2a;font-size: 16px;height: 42px;display: none" >
+            </button>
+        </form>
+    </div> <!-- /container -->
+</div>
+</body>
+</html>

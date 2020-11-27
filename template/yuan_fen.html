@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery仿探探APP手机滑动切换特效</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="../static/css/reset.css"/>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../static/css/home/main.css"/>
+<link rel="stylesheet" href="../static/css/yuan_fen/photoSwipe.css">
+
+</head>
+<body>
+
+   <div>
+        <nav class="navbar" style="background-color: hotpink ;margin-bottom: 0;height: 80px">
+
+            <h2 class="form-signin-heading" style="font-size: 30px;margin-top: 24px;text-align: center;color: whitesmoke">
+                TM交友平台</h2>
+        </nav>
+        <div class="container" id="photo_box">
+            <div class="card-stack" style="height: 300px;float: left" id="div1">
+                <ul class="card-list" id="ul_list">
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+   <div style="height:23px;position:absolute;right: 45%;bottom:32%;border-radius: 10px;font-size: 16px;text-align: center;color: hotpink">
+
+            <span id="rewind" class="glyphicon glyphicon-remove-circle  " style="font-size: 45px"></span>
+
+    </div>
+
+    <div style="width: 90%;height:100px;position:absolute;left: 5%;bottom:12%;border-radius: 10px;font-size: 14px;background-color: hotpink;text-align: center;color: white">
+        <p style="margin-top: 10px;margin-bottom: 0">温馨提示：上滑—超级喜欢、右滑—喜欢、左滑—不喜欢、下滑—拉入黑名单;
+            <span class="glyphicon glyphicon-remove-circle">—反悔</span>
+            其中普通用户反悔最大次数为3,会员用户反悔最大次数为5,操作大于5分钟不支持反悔。</p>
+           <p style="text-align: center" id="con">当日反悔记录(3/0)</p>
+    </div>
+    <footer style="height: 80px;font-size: 16px;background: #eee;">
+    <a href="mine.html" class="home">
+        <dl>
+
+            <dd class="glyphicon glyphicon-home " style="margin-top: 19px;font-size: 20px;"></dd>
+
+            <dd style="align-content: center;">
+                遇见
+            </dd>
+        </dl>
+    </a>
+
+
+
+    <a href="yuan_fen.html" class="cart">
+        <dl>
+
+            <dd class="glyphicon glyphicon-heart " style="margin-top: 19px;font-size: 20px; color: hotpink"></dd>
+
+            <dd style="align-content: center;color: hotpink">
+                缘分
+            </dd>
+        </dl>
+    </a>
+  <a href="hao_you.html" class="market">
+        <dl>
+<dd class="glyphicon glyphicon-plane "
+                    style="margin-top: 19px;font-size: 20px;"></dd>
+
+                <dd style="align-content: center">
+                    好友
+                </dd>
+        </dl>
+    </a>
+
+    <a href="ge_ren.html" class="mine">
+        <dl>
+
+            <dd class="glyphicon glyphicon-user " style="margin-top: 19px;font-size: 20px;    "></dd>
+
+            <dd style="align-content: center">
+                个人
+            </dd>
+        </dl>
+    </a>
+</footer>
+
+
+
+
+<script type="text/javascript" src="../static/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../static/js/yuan_fen/photoSwipe.js"></script>
+
+</body>
+</html>

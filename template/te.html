@@ -1,0 +1,43 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>拖动DIV</title>
+ 
+    <style type="text/css">
+    #test{
+        background:#7cd2f8;
+        width:100px;
+        height:100px;
+        text-align:center;
+        position:absolute;
+        z-index:1;
+        left:100px;
+        top:100px;
+    }
+    </style>
+ 
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $('#test').on('touchend',function(e) {
+         var _touch = e.originalEvent.changedTouches[0];
+         console.log(_touch)
+         var _x= _touch.pageX;
+         var _y = _touch.pageY;
+         console.log(_x,_y);
+         console.log('nihao ');
+    })
+    });
+    </script>
+</head>
+<body>
+<div style="width: 200px;height: 200px;background-color: hotpink">
+    <p id="test">
+        jquery实现DIV层拖动
+    </p>
+</div>
+</body>
+</html>
+

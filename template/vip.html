@@ -1,0 +1,164 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>会员充值</title>
+    <meta name="referrer" content="no-referrer" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link href="../static/css/vip/style.css" rel="stylesheet" type="text/css" />
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/vip/vip.js"></script>
+</head>
+<body>
+    <section class="aui-flexView">
+        <header class="aui-navBar aui-navBar-fixed" style="background-color: hotpink">
+            <a href="ge_ren.html" class="aui-navBar-item">
+                <i class="icon icon-return"></i>
+            </a>
+            <div class="aui-center">
+                <span class="aui-center-title">会员充值</span>
+            </div>
+            <a href="javascript:;" class="aui-navBar-item">
+                <i class="icon icon-sys"></i>
+            </a>
+        </header>
+        <section class="aui-scrollView">
+            <div class="aui-flex aui-flex-gradual">
+                <div class="aui-flex-user">
+                    <img id="icon" src="" alt="">
+                    <span class="aui-flex-vip">
+                        <img src="../static/media/vip/icon-vip.png" alt="">
+                    </span>
+                </div>
+                <div class="aui-flex-box">
+                    <h2 id="nickname"></h2>
+                    <p>
+                        <em id="vip_level"></em>
+                    </p>
+                </div>
+                <div class="aui-flex-Member">
+                    <p id="vip_end"></p>
+                </div>
+            </div>
+            <div class="aui-flex-member-list">
+                <h2>优享会员</h2>
+                <ul class="aui-cho-box">
+
+                    <li class="aui-flex">
+                        <div class="aui-flex-box">
+                            <h3>黄金会员连续包月</h3>
+                            <p>连续包月享受会员(立享1小时达+返现5%)</p>
+                        </div>
+                        <div class="aui-original-thj">
+                            特惠价 <i>￥</i>
+                        </div>
+                        <i class="aui-price">10</i>
+                        <div class="aui-original-pic">
+                            ￥15
+                        </div>
+                    </li>
+                    <li class="aui-flex">
+                        <div class="aui-flex-box">
+                            <h3>铂金会员连续包月</h3>
+                            <p>连续包月享受会员(立享1小时达+返现5%)</p>
+                        </div>
+                        <div class="aui-original-thj">
+                            特惠价 <i>￥</i>
+                        </div>
+                        <i class="aui-price">20</i>
+                        <div class="aui-original-pic">
+                            ￥32
+                        </div>
+                    </li>
+                    <li class="aui-flex">
+                        <div class="aui-flex-box">
+                            <h3>钻石会员连续包月</h3>
+                            <p>连续包月享受会员(立享1小时达+返现5%)</p>
+                        </div>
+                        <div class="aui-original-thj">
+                            特惠价 <i>￥</i>
+                        </div>
+                        <i class="aui-price">30</i>
+                        <div class="aui-original-pic">
+                            ￥45
+                        </div>
+                    </li>
+                </ul>
+                <div style="display:none">
+                    <input name="" type="text" value="1" class="auiSks" />
+                </div>
+                <p class="aui-total b-line">
+                    需要支付： <span id="money">10</span>
+                    元
+                </p>
+                <div class="chi">
+                    <div class="aui-flex b-line" style="padding:15px 0">
+                        <div class="aui-flex-wx">
+                            <img src="../static/media/vip/icon-wx.png" alt="">
+                        </div>
+                        <div class="aui-flex-box aui-flex-box-clear">
+                            <h4>
+                                微信支付
+
+
+                                <em class="aui-flex-box-tj">
+                                    <img src="../static/media/vip/icon-tj.png" alt="">
+                                </em>
+                            </h4>
+                            <p>亿万用户的选择，更快更安全</p>
+                        </div>
+                        <div class="aui-payment-method">
+                            <label class="cell-right">
+                                <input type="radio" name="radio" value="wx" checked="checked">
+                                <i class="cell-radio-icon"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="aui-flex b-line" style="padding:15px 0">
+                        <div class="aui-flex-wx">
+                            <img src="../static/media/vip/icon-zfb.png" alt="">
+                        </div>
+                        <div class="aui-flex-box">
+                            <h4>支付宝支付</h4>
+                            <p>亿万用户的选择</p>
+                        </div>
+                        <div class="aui-payment-method">
+                            <label class="cell-right">
+                                <input type="radio" name="radio" value="zfb">
+                                <i class="cell-radio-icon"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <button class="btn btn-lg btn-primary btn-block" type="button" id="remind"
+                    style="position: absolute;left: 15%;bottom: 45%;width: 70%;margin: 30px auto;background-color: hotpink;color: white;font-size: 16px;height: 42px;display: none" >
+            </button>
+        <footer class="aui-tabBar aui-tabBar-fixed">
+            <button id="sub" class="aui-tabBar-btn">续费会员卡,继续享受5%返现</button>
+        </footer>
+    </section>
+    <script type="text/javascript">
+            $(document).ready(function(e) {
+                $(".aui-cho-box li").click(function() {
+
+                    $(this).addClass("on").siblings().removeClass("on");
+                    tola();
+                });
+
+            });
+            function tola() {
+                var $li = $(".aui-cho-box").children("li.on");
+                var money = $li.children("i").text();
+                var count = $(".auiSks").val();
+                $(".aui-total span").text(money * count);
+            }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,53 @@
+.user_title{
+    margin: 0;
+    background-color: white;
+    height: 40px;
+    line-height: 40px ;
+    font-size: 15px;
+    padding-left: 15px;
+
+}
+
+.cai_dan{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color:#eee;
+    color: #9d9d9d;
+    padding-left: 15px;
+}
+.line{
+    float: left;
+    width: 100%;
+    background-color: #eee;
+    height: 2.5px;
+    margin: 0
+}
+input{
+    background-color: white;
+    border: 0;
+    width: 100%;
+}
+.chevron-right{
+    width: 8%;
+    float: left
+}
+
+.right_value{
+    margin: 0;
+    background-color: white;
+    height: 40px;
+    line-height: 40px ;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.right_tag{
+    margin: 0;
+    background-color: white;
+    height: 40px;
+    line-height: 40px ;
+    font-size: 15px;
+    padding-left: 15px;
+    width: 9%;
+}

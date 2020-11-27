@@ -1,0 +1,24 @@
+.rcmd_users{
+    width: 31%;
+    height: 132px;
+    margin-left: 4.5px;
+    border-radius: 10px;
+    background-color: white;
+    float: left
+}
+
+.icon{
+    width: 100%;
+    height: 112px;
+    border-radius: 10px;
+}
+.name{
+    font-size: 10px;
+    padding-left: 10px
+}
+.age{
+    font-size: 10px;
+    float: right;
+    padding-right: 10px;
+    padding-top: 4px
+}

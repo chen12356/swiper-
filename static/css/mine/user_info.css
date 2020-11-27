@@ -1,0 +1,57 @@
+hr{
+    width: 414px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+p  {
+    font-size: 14px;
+    height: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    margin-bottom: 0;
+
+
+}
+hr{
+    background-color: #eee;
+}
+.title{
+    background-color: #eee;
+}
+.show_right {
+    float: right;
+}
+.check{
+    float: right;
+    margin-right: 20px;
+    color:darkgray;
+    font-size: 12px;
+    margin-top: 1px;
+}
+#add_friend{
+    width: 70px;
+    height: 70px;
+    background-color: hotpink;
+    color: white;
+    font-size: 40px;
+    padding-left: 15px;
+    padding-top: 15px;
+    border-radius: 35px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+#no_friend{
+  width: 70px;
+    height: 70px;
+    background-color: hotpink;
+    color: white;
+    font-size: 40px;
+    padding-left: 15px;
+    padding-top: 15px;
+    border-radius: 35px;
+    float: right;
+    margin-right: 25%;
+    margin-bottom: 20px;
+}
